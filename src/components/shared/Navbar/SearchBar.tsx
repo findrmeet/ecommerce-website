@@ -15,7 +15,7 @@ export default function SearchBar({ value, onChange }: SearchBarProps) {
         value={value}
         onChange={onChange}
         placeholder="Search for products, brands..."
-        className="w-full pl-10 pr-4 py-2 border border-[#03C855] rounded-full focus:outline-none focus:ring-1 focus:ring-[#03C855]"
+        className="w-full pl-10 pr-4 py-2 border border-primary-500 rounded-full focus:outline-none focus:ring-1 focus:ring-primary-500"
       />
     </div>
   );
