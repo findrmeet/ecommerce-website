@@ -1,7 +1,7 @@
 import CategoryBar from "@/components/shared/CategoryBar/CategoryBar";
 import Navbar from "@/components/shared/Navbar/Navbar";
-import React from "react";
 import Hero from "./Hero";
+import AllCategories from "@/components/ui/AllCategories/AllCategories";
 
 const Home = () => {
   return (
@@ -9,6 +9,9 @@ const Home = () => {
       <Navbar />
       <CategoryBar />
       <Hero />
+      <div className="py-5">
+        <AllCategories />
+      </div>
     </>
   );
 };
