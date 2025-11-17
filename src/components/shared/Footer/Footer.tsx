@@ -23,6 +23,13 @@ const Footer = () => {
         {/* fashion */}
         <Fashion />
       </div>
+      <div className="container max-w-[1320px] mx-auto pb-4">
+        <img src="pay-with.png" alt="pay-with" />
+      </div>
+      <div className="py-2 border-t text-[#4B5563] text-center container max-w-[1320px] mx-auto ">
+        © 2025 your choice company Ltd. gazipur, postal code - 1289, dhaka
+        bangladesh.
+      </div>
     </div>
   );
 };
