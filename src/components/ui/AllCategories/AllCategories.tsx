@@ -30,7 +30,7 @@ const AllCategories = () => {
         <SmallCard />
         <SmallCard />
       </div>
-      <div className="lg:py-5 py-2 grid grid-cols-1 lg:grid-cols-5 gap-2 lg:gap-5 px-2 lg:px-0">
+      <div className="lg:py-5 py-2 grid grid-cols-1 lg:grid-cols-3 gap-2 lg:gap-5 px-2 lg:px-0">
         <LargeCard />
         <LargeCard />
         <LargeCard />
@@ -38,7 +38,7 @@ const AllCategories = () => {
         <LargeCard />
         <LargeCard />
       </div>
-      <div className="lg:py-5 py-2 grid grid-cols-2 lg:grid-cols-5 gap-2 lg:gap-5 px-2 lg:px-0">
+      <div className=" lg:py-5 py-2 grid grid-cols-2 gap-2 lg:grid-cols-6 lg:gap-5 px-2 lg:px-0">
         <div className="col-span-2 row-span-2">
           <LargeCard />
         </div>

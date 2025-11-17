@@ -24,7 +24,7 @@ const LogoAndCategory = () => {
         <div className="uppercase cursor-pointer">store location</div>
         <div className="py-4">
           <h3 className="uppercase text-sm border-b pb-2">share your love</h3>
-          <div className="pt-4 flex gap-2">
+          <div className="pt-4 flex gap-2 justify-center">
             <FaFacebookF className="border p-1 text-3xl rounded-full cursor-pointer hover:bg-white hover:text-black" />
             <FaYoutube className="border p-1 text-3xl rounded-full cursor-pointer hover:bg-white hover:text-black" />
             <FaXTwitter className="border p-1 text-3xl rounded-full cursor-pointer hover:bg-white hover:text-black" />

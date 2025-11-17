@@ -9,7 +9,7 @@ import Fashion from "./Fashion";
 const Footer = () => {
   return (
     <div className=" bg-black py-10">
-      <div className="grid grid-cols-6 container max-w-[1320px] mx-auto gap-14">
+      <div className="grid lg:grid-cols-6 container max-w-[1320px] mx-auto lg:gap-14 gap-4 px-2 justify-center items-center lg:items-start text-center lg:text-start">
         {/* logo & category */}
         <LogoAndCategory />
         {/* top category */}
@@ -23,7 +23,7 @@ const Footer = () => {
         {/* fashion */}
         <Fashion />
       </div>
-      <div className="container max-w-[1320px] mx-auto pb-4">
+      <div className="container max-w-[1320px] mx-auto pb-4 hidden lg:block">
         <img src="pay-with.png" alt="pay-with" />
       </div>
       <div className="py-2 border-t text-[#4B5563] text-center container max-w-[1320px] mx-auto ">

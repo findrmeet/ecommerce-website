@@ -5,9 +5,9 @@ import { SlEnvolope } from "react-icons/sl";
 
 const NewsLetter = () => {
   return (
-    <div className="flex justify-center items-center  py-8 bg-[#18181B] text-white ">
-      <div className="flex flex-col justify-between  w-[1120px] gap-10">
-        <div className="flex justify-between gap-20">
+    <div className="flex justify-center items-center py-8 bg-[#18181B] text-white">
+      <div className="flex flex-col justify-between  w-[1120px] gap-10 px-4">
+        <div className="flex flex-col lg:flex-row justify-between gap-10 lg:gap-20">
           <div className="flex flex-col gap-3 w-full flex-2">
             <div className="flex items-center gap-3.5 text-lg self-start">
               <svg
@@ -43,7 +43,7 @@ const NewsLetter = () => {
           </div>
 
           <div className="flex-[1.5]">
-            <div className="flex items-center gap-3.5 text-lg">
+            <div className="flex  items-center gap-3.5 text-lg">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -76,7 +76,7 @@ const NewsLetter = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-3">
+        <div className="grid lg:grid-cols-3 gap-4">
           <div className="flex gap-2 items-center ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
