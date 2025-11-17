@@ -3,19 +3,23 @@ import Navbar from "@/components/shared/Navbar/Navbar";
 import Hero from "./Hero";
 import AllCategories from "@/components/ui/AllCategories/AllCategories";
 import OurTopSellingProducts from "@/components/ui/OurTopSellingProducts/OurTopSellingProducts";
+import Footer from "@/components/shared/Footer/Footer";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <CategoryBar />
-      <Hero />
-      <div className="py-5">
-        <AllCategories />
-      </div>
-      <div>
+      <div className="container max-w-[1320px] mx-auto">
+        <Navbar />
+        <CategoryBar />
+        <Hero />
+        <div className="py-5">
+          <AllCategories />
+        </div>
+        {/* <div>
         <OurTopSellingProducts />
+      </div> */}
       </div>
+      <Footer />
     </>
   );
 };
