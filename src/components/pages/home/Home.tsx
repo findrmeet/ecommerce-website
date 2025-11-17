@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import AllCategories from "@/components/ui/AllCategories/AllCategories";
 import OurTopSellingProducts from "@/components/ui/OurTopSellingProducts/OurTopSellingProducts";
 import Footer from "@/components/shared/Footer/Footer";
+import NewsLetter from "@/components/shared/NewsLetter/NewsLetter";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
         <OurTopSellingProducts />
       </div> */}
       </div>
+      <NewsLetter />
       <Footer />
     </>
   );
