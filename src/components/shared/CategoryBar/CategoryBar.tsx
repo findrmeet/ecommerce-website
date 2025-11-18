@@ -16,7 +16,7 @@ const categories = [
 
 export default function CategoryBar() {
   return (
-    <div className="w-full py-2.5 border-t border-gray-300 flex flex-col lg:flex-row justify-between gap-2">
+    <div className="w-full py-2.5 border-t border-gray-300 flex flex-col md:flex-row justify-between gap-2 px-2">
       <div className="flex gap-2 overflow-x-auto no-scrollbar">
         {categories.map((cat) => (
           <button

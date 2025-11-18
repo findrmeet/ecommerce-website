@@ -23,8 +23,10 @@ const LogoAndCategory = () => {
         <div className="uppercase cursor-pointer">faqs</div>
         <div className="uppercase cursor-pointer">store location</div>
         <div className="py-4">
-          <h3 className="uppercase text-sm border-b pb-2">share your love</h3>
-          <div className="pt-4 flex gap-2 justify-center">
+          <h3 className="uppercase text-sm  pb-4 md:pb-2 border-b sm:inline lg:block">
+            share your love
+          </h3>
+          <div className="pt-4 flex gap-2 justify-center sm:justify-start">
             <FaFacebookF className="border p-1 text-3xl rounded-full cursor-pointer hover:bg-white hover:text-black" />
             <FaYoutube className="border p-1 text-3xl rounded-full cursor-pointer hover:bg-white hover:text-black" />
             <FaXTwitter className="border p-1 text-3xl rounded-full cursor-pointer hover:bg-white hover:text-black" />
