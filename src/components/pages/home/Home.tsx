@@ -14,22 +14,20 @@ import Testimonials from "@/components/ui/Testimonials/Testimonials";
 const Home = () => {
   return (
     <>
-      <div className="container max-w-[1320px] mx-auto">
-        <Navbar />
-        <CategoryBar />
-        <Hero />
-        <div className="py-5">
-          <AllCategories />
-          <div className="pb-5">
-            <OurTopSellingProducts />
-            <OurFutureProducts />
-          </div>
-          <BlogSection />
-          <Testimonials />
-          <ProductShowcase />
-          <ProductGrid />
-        </div>
-      </div>
+      <Navbar />
+      <CategoryBar />
+      <Hero />
+
+      <AllCategories />
+
+      <OurTopSellingProducts />
+      <OurFutureProducts />
+
+      <BlogSection />
+      <Testimonials />
+      <ProductShowcase />
+      <ProductGrid />
+
       <NewsLetter />
       <Footer />
     </>
