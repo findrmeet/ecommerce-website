@@ -4,7 +4,7 @@ const MediumCard = () => {
   return (
     <div>
       {/* background image */}
-      <div className="bg-[url(/md-card-bg.png)] h-52 bg-cover bg-center relative text-sm">
+      <div className="bg-[url(/md-card-bg.png)] h-52 bg-cover bg-center relative text-sm bg-blend-screen">
         <span className="bg-primary-500 px-2 py-1 absolute top-1 left-1 text-xs text-white">
           TK 300 OFF
         </span>

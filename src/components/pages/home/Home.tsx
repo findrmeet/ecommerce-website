@@ -14,7 +14,6 @@ import Testimonials from "@/components/ui/Testimonials/Testimonials";
 const Home = () => {
   return (
     <>
-      <Navbar />
       <CategoryBar />
       <Hero />
       <AllCategories />
@@ -25,7 +24,6 @@ const Home = () => {
       <ProductShowcase />
       <ProductGrid />
       <NewsLetter />
-      <Footer />
     </>
   );
 };

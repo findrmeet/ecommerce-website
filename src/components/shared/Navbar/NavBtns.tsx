@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HiOutlineBolt } from "react-icons/hi2";
 import { RiShoppingBag3Line } from "react-icons/ri";
 
@@ -7,9 +8,12 @@ const NavBtns = () => {
       <button className="cursor-pointer uppercase py-2 px-4  rounded-full bg-linear-to-r text-white  from-[#0084FF] to-[#00E560] flex items-center gap-2 font-medium">
         <HiOutlineBolt size={26} /> Offers
       </button>
-      <button className="cursor-pointer uppercase py-2 px-4 rounded-full bg-[#1D2535] text-white font-medium">
+      <Link
+        href={"/whistlist"}
+        className="cursor-pointer uppercase py-2 px-4 rounded-full bg-[#1D2535] text-white font-medium"
+      >
         Whistlist
-      </button>
+      </Link>
       <button className="cursor-pointer uppercase py-2 px-4 rounded-full bg-[#E2E8F0] font-medium">
         Login
       </button>
