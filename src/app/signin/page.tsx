@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Phone, Lock, Eye } from "lucide-react";
+import Link from "next/link";
 
 // type declarations
 type SignInValues = {
@@ -36,7 +37,7 @@ export default function SignInForm() {
             <div
               className="relative  border
                     border-neutral-300
-                rounded-xl
+                rounded-xl focus-within:border-green-500 transition
                    "
             >
               {/* Icon box */}
@@ -128,9 +129,12 @@ export default function SignInForm() {
         {/* Footer */}
         <p className="text-sm text-center text-neutral-400 mt-6">
           Don’t have an account?{" "}
-          <span className="font-medium text-neutral-900 cursor-pointer">
+          <Link
+            href={"/signup"}
+            className="font-medium text-neutral-900 cursor-pointer"
+          >
             Sign up for free
-          </span>
+          </Link>
         </p>
       </div>
     </section>
