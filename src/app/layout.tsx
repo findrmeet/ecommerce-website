@@ -7,8 +7,8 @@ import CategoryBar from "@/components/shared/CategoryBar/CategoryBar";
 import NewsLetter from "@/components/shared/NewsLetter/NewsLetter";
 
 const kanit = Kanit({
+  subsets: ["latin"],
   weight: ["400", "700"],
-  variable: "--font-kanit",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={kanit.variable}>
+      <body className={kanit.className}>
         <div className="shadow-2xl">
           <Navbar />
           <CategoryBar />

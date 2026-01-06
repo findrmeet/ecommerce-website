@@ -3,7 +3,7 @@ const page = () => {
     <div className="flex items-center justify-center ">
       <div className="bg-white rounded-2xl  w-lg flex flex-col gap-8 items-center p-6 text-center">
         <div className="flex flex-col w-fit  space-y-1">
-          <h1 className="text-2xl font-semibold">Verify Your Phone</h1>
+          <h1 className="text-2xl ">Verify Your Phone</h1>
           <p className="text-[#8A99AF] text-sm ">
             We've sent a 5-digit code to
           </p>

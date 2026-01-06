@@ -22,7 +22,7 @@ export default function SignInForm() {
       <div className=" bg-white rounded-3xl p-6 shadow-xl w-lg">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-2xl font-semibold">Sign In</h1>
+          <h1 className="text-2xl ">Sign In</h1>
           <p className="text-sm text-[#8A99AF] mt-1">
             Enter your credentials to access your account
           </p>

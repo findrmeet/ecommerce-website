@@ -22,7 +22,7 @@ export default function SignupForm() {
       <div className=" bg-white rounded-3xl p-6 shadow-xl w-lg">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-2xl font-semibold">Create Account</h1>
+          <h1 className="text-2xl ">Create Account</h1>
           <p className="text-sm text-[#8A99AF] mt-1">Sign up to get started</p>
         </div>
 
@@ -65,13 +65,13 @@ export default function SignupForm() {
                 {...register("password")}
                 placeholder="Password"
                 className="
-        w-full
-        py-3
-        pl-4
-        pr-12
-        focus:outline-none
-        bg-transparent
-      "
+                        w-full
+                        py-3
+                        pl-4
+                        pr-12
+                        focus:outline-none
+                        bg-transparent
+                        "
               />
 
               {/* Eye toggle */}
