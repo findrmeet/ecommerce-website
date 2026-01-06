@@ -28,7 +28,7 @@ export default function RootLayout({
           <Navbar />
           <CategoryBar />
         </div>
-        <div className="bg-gray-50 py-8">{children}</div>
+        <div className="bg-gray-50 py-8 px-2">{children}</div>
         <NewsLetter />
         <Footer />
       </body>

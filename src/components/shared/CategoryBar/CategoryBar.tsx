@@ -31,7 +31,6 @@ export default function CategoryBar() {
         <CategoryBtn btnTitle="Clearance Sale" btnColor="bg-[#F79009]" />
         <CategoryBtn btnTitle="Men" btnColor="bg-[#2E88E2]" />
         <CategoryBtn btnTitle="Combo" btnColor="bg-[#3CBEB9]" />
-        <CategoryBtn btnTitle="Footwear" btnColor="bg-[#6366F1]" />
       </div>
     </div>
   );

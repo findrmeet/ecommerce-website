@@ -45,8 +45,8 @@ const page = () => {
             </div>
 
             {/* Right */}
-            <div className="flex flex-col  w-full">
-              <div className="flex justify-between">
+            <div className="flex flex-col  w-full gap-2">
+              <div className="flex justify-between items-start">
                 <div className="space-y-2">
                   <p className="text-sm font-semibold text-neutral-900">
                     {item.title}
