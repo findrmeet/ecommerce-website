@@ -16,9 +16,9 @@ const Page = () => {
   const [active, setActive] = useState("dashboard");
 
   return (
-    <div className="container-custom grid grid-cols-12 gap-2.5">
+    <div className="container-custom grid grid-cols-12 gap-2.5 ">
       {/* sidebar */}
-      <ul className="space-y-4 col-span-2">
+      <ul className="space-y-4 col-span-2 hidden sm:block">
         <li
           onClick={() => setActive("dashboard")}
           className={`flex gap-2 cursor-pointer hover:text-[#03C855] ${
@@ -52,10 +52,10 @@ const Page = () => {
       </ul>
 
       {/* content */}
-      <div className="col-span-10">
+      <div className="sm:col-span-10 col-span-12">
         {active === "dashboard" && (
-          <div className="grid grid-cols-3 gap-2.5 self-start">
-            <div className="bg-white rounded-2xl flex p-4">
+          <div className="grid sm:grid-cols-3 gap-2.5 self-start">
+            <div className="bg-white rounded-2xl flex p-4 ">
               <div className="flex gap-3 items-center">
                 <span className="p-3 bg-[#935AF552] block rounded-full">
                   <Box />
