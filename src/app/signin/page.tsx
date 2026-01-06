@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Phone, Lock, Eye } from "lucide-react";
 
@@ -9,6 +10,7 @@ type SignInValues = {
 };
 
 export default function SignInForm() {
+  const [showPassword, setShowPassword] = useState<boolean>(false);
   const { register, handleSubmit } = useForm<SignInValues>();
   const onSubmit: SubmitHandler<SignInValues> = (data) => {
     console.log(data);
@@ -57,30 +59,43 @@ export default function SignInForm() {
             </div>
           </div>
 
-          {/* Password */}
           <div>
+            {/* password */}
             <label className="block text-sm font-medium mb-1">Password</label>
-            <div
-              className="relative  border
-                    border-neutral-300
-                rounded-xl
-                   "
-            >
-              {/* Icon box */}
-              <div className="absolute left-0 top-0 bottom-0 w-11 flex items-center justify-center   rounded-l-xl bg-gray-50">
+
+            <div className="relative border border-neutral-300 rounded-xl focus-within:border-green-500 transition">
+              {/* Lock icon */}
+              <div className="absolute left-0 top-0 bottom-0 w-11 flex items-center justify-center rounded-l-xl bg-gray-50">
                 <Lock className="w-4 h-4 text-neutral-400" />
               </div>
+
+              {/* Input */}
               <input
-                type="password"
+                type={showPassword ? "text" : "password"}
                 {...register("password")}
                 placeholder="Password"
-                className="    w-full
-                    py-3
-                    pl-12
-                    pr-4
-              focus:outline-none"
+                className="
+        w-full
+        py-3
+        pl-12
+        pr-12
+        focus:outline-none
+        bg-transparent
+      "
               />
-              <Eye className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400 cursor-pointer" />
+
+              {/* Eye toggle */}
+              <button
+                type="button"
+                onClick={() => setShowPassword((v) => !v)}
+                className="absolute right-4 top-1/2 -translate-y-1/2"
+              >
+                <Eye
+                  className={`w-4 h-4 cursor-pointer transition ${
+                    showPassword ? "text-green-500" : "text-neutral-400"
+                  }`}
+                />
+              </button>
             </div>
           </div>
 
