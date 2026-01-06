@@ -3,6 +3,8 @@ import { Kanit } from "next/font/google";
 import "../styles/globals.css";
 import Navbar from "@/components/shared/Navbar/Navbar";
 import Footer from "@/components/shared/Footer/Footer";
+import CategoryBar from "@/components/shared/CategoryBar/CategoryBar";
+import NewsLetter from "@/components/shared/NewsLetter/NewsLetter";
 
 const kanit = Kanit({
   weight: ["400", "700"],
@@ -22,9 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={kanit.variable}>
-        <Navbar />
-        {children}
-
+        <div className="shadow-2xl">
+          <Navbar />
+          <CategoryBar />
+        </div>
+        <div className="bg-gray-50 py-8">{children}</div>
+        <NewsLetter />
         <Footer />
       </body>
     </html>
