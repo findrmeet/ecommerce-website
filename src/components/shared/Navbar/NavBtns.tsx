@@ -14,9 +14,12 @@ const NavBtns = () => {
       >
         Whistlist
       </Link>
-      <button className="cursor-pointer uppercase py-2 px-4 rounded-full bg-[#E2E8F0] font-medium">
+      <Link
+        href="/signin"
+        className="cursor-pointer uppercase py-2 px-4 rounded-full bg-[#E2E8F0] font-medium"
+      >
         Login
-      </button>
+      </Link>
       <button className="cursor-pointer uppercase py-2 px-4 rounded-full bg-primary-500  text-white flex items-center gap-2 font-medium">
         <RiShoppingBag3Line size={26} /> Bags{" "}
         <span className="bg-white text-primary-500 px-2 text-center text-base rounded-full">

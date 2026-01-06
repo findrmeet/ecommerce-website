@@ -31,12 +31,28 @@ export default function SignInForm() {
             <label className="block text-sm font-medium mb-1">
               Mobile Number
             </label>
-            <div className="relative ">
-              <Phone className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" />
+            <div
+              className="relative  border
+                    border-neutral-300
+                rounded-xl
+                   "
+            >
+              {/* Icon box */}
+              <div className="absolute left-0 top-0 bottom-0 w-11 flex items-center justify-center   rounded-l-xl bg-gray-50">
+                <Phone className="w-4 h-4 text-neutral-400" />
+              </div>
+
               <input
                 {...register("mobile")}
                 placeholder="Enter your mobile number"
-                className="w-full pl-11 pr-4 py-3 rounded-xl border border-neutral-300 focus:outline-none  focus:border-green-500"
+                className="
+                    w-full
+                    py-3
+                    pl-12
+                    pr-4
+              focus:outline-none
+                
+                    "
               />
             </div>
           </div>
@@ -44,13 +60,25 @@ export default function SignInForm() {
           {/* Password */}
           <div>
             <label className="block text-sm font-medium mb-1">Password</label>
-            <div className="relative">
-              <Lock className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400" />
+            <div
+              className="relative  border
+                    border-neutral-300
+                rounded-xl
+                   "
+            >
+              {/* Icon box */}
+              <div className="absolute left-0 top-0 bottom-0 w-11 flex items-center justify-center   rounded-l-xl bg-gray-50">
+                <Lock className="w-4 h-4 text-neutral-400" />
+              </div>
               <input
                 type="password"
                 {...register("password")}
                 placeholder="Password"
-                className="w-full pl-11 pr-11 py-3 rounded-xl border border-neutral-300 focus:outline-none  focus:border-green-500"
+                className="    w-full
+                    py-3
+                    pl-12
+                    pr-4
+              focus:outline-none"
               />
               <Eye className="absolute right-4 top-1/2 -translate-y-1/2 w-4 h-4 text-neutral-400 cursor-pointer" />
             </div>
