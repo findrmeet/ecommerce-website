@@ -50,3 +50,24 @@ input[type="radio"]:checked::before {
   border-radius: 50%;
   transform: translate(-50%, -50%);
 }
+select option {
+  background-color: white;
+  color: #374151;
+}
+
+select option:checked {
+  background: linear-gradient(#10b981, #10b981);
+  color: rgb(0, 161, 27);
+}
+
+select option:hover {
+  background: linear-gradient(#d1fae5, #d1fae5) !important;
+  background-color: #d1fae5 !important;
+  color: #065f46 !important;
+  box-shadow: 0 0 10px 100px #d1fae5 inset !important;
+}
+
+/* Additional WebKit specific */
+select option:hover:not(:checked) {
+  background: #d1fae5 !important;
+}

@@ -284,7 +284,7 @@ const Page = () => {
                 <select
                   value={entriesPerPage}
                   onChange={(e) => setEntriesPerPage(Number(e.target.value))}
-                  className="px-3 py-1.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white "
+                  className="px-3 py-1.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring focus:ring-green-500 bg-white "
                 >
                   <option value={10}>10</option>
                   <option value={50}>50</option>
