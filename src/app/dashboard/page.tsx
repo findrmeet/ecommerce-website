@@ -65,7 +65,7 @@ const Page = () => {
   return (
     <div className="container-custom space-y-2.5 md:grid  grid-cols-1 md:grid-cols-12 gap-2.5 text-black">
       {/* sidebar */}
-      <ul className="space-y-3 md:col-span-2  border p-4 rounded-2xl border-gray-200 bg-white">
+      <ul className="space-y-3 md:col-span-2  border p-4 rounded-2xl border-gray-200 bg-white h-fit ">
         <li
           onClick={() => setActive("dashboard")}
           className={`flex gap-3 cursor-pointer hover:text-[#03C855] items-center font-normal  px-2.5 py-1.5 rounded-lg ${
