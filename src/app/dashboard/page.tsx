@@ -3,17 +3,12 @@
 import { useState } from "react";
 import {
   Box,
-  BoxIcon,
   CircleCheck,
   CircleUser,
   CircleX,
-  LayoutDashboardIcon,
   LogOut,
   Settings,
   ShoppingBag,
-  ShoppingCart,
-  User,
-  UserRound,
   Eye,
 } from "lucide-react";
 
@@ -68,9 +63,9 @@ const Page = () => {
   const totalEntries = 85;
   const totalPages = Math.ceil(totalEntries / entriesPerPage);
   return (
-    <div className="container-custom grid grid-cols-12 gap-2.5 text-black">
+    <div className="container-custom space-y-2.5 md:grid  grid-cols-1 md:grid-cols-12 gap-2.5 text-black">
       {/* sidebar */}
-      <ul className="space-y-3 col-span-2 hidden sm:block border p-4 rounded-2xl border-gray-200 bg-white">
+      <ul className="space-y-3 md:col-span-2  border p-4 rounded-2xl border-gray-200 bg-white">
         <li
           onClick={() => setActive("dashboard")}
           className={`flex gap-3 cursor-pointer hover:text-[#03C855] items-center font-normal  px-2.5 py-1.5 rounded-lg ${
