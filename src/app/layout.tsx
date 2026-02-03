@@ -24,13 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={kanit.className}>
-        <div className="shadow-2xl">
+        {/* <div className="shadow-2xl">
           <Navbar />
           <CategoryBar />
-        </div>
+        </div> */}
         <div className="bg-gray-50 py-8 px-2">{children}</div>
-        <NewsLetter />
-        <Footer />
+        {/* <NewsLetter />
+        <Footer /> */}
       </body>
     </html>
   );

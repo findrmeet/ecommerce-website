@@ -68,7 +68,7 @@ const Page = () => {
   const totalEntries = 85;
   const totalPages = Math.ceil(totalEntries / entriesPerPage);
   return (
-    <div className="container-custom grid grid-cols-12 gap-2.5 ">
+    <div className="container-custom grid grid-cols-12 gap-2.5 text-black">
       {/* sidebar */}
       <ul className="space-y-3 col-span-2 hidden sm:block border p-4 rounded-2xl border-gray-200 bg-white">
         <li
