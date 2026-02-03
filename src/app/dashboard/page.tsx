@@ -11,6 +11,8 @@ import {
   ShoppingBag,
   Eye,
 } from "lucide-react";
+import CustomStyledDropdown from "./CustomStyledDropdown";
+import PaymentStatusDropdown from "./PaymentStatusDropodown";
 
 const Page = () => {
   const [active, setActive] = useState("dashboard");
@@ -145,7 +147,7 @@ const Page = () => {
           <div className="flex flex-col">
             {/* Search and Filters Bar */}
             <div className="flex items-center justify-between mb-6 gap-4">
-              <div className="relative flex-1 max-w-xs">
+              <div className="relative flex-1 max-w-xs bg-white rounded-lg">
                 <svg
                   className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400"
                   fill="none"
@@ -167,47 +169,10 @@ const Page = () => {
               </div>
               <div className="flex gap-3">
                 <div className="relative">
-                  <select className="appearance-none px-4 py-2.5 pr-10 border border-gray-200 rounded-lg bg-white text-sm font-medium text-gray-700 focus:outline-none focus:ring-1 focus:ring-green-500 cursor-pointer">
-                    <option>Payment Status</option>
-                    <option>Completed</option>
-                    <option>Pending</option>
-                    <option>Failed</option>
-                  </select>
-                  <svg
-                    className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
+                  <PaymentStatusDropdown />
                 </div>
                 <div className="relative">
-                  <select className="appearance-none px-4 py-2.5 pr-10 border border-gray-200 rounded-lg bg-white text-sm font-medium text-gray-700 focus:outline-none focus:ring-1  focus:ring-green-500 cursor-pointer">
-                    <option>Order Status</option>
-                    <option>Pending</option>
-                    <option>Processing</option>
-                    <option>Shipped</option>
-                    <option>Delivered</option>
-                  </select>
-                  <svg
-                    className="absolute right-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
+                  <CustomStyledDropdown />
                 </div>
               </div>
             </div>
@@ -284,12 +249,13 @@ const Page = () => {
                 <select
                   value={entriesPerPage}
                   onChange={(e) => setEntriesPerPage(Number(e.target.value))}
-                  className="px-3 py-1.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring focus:ring-green-500 bg-white "
+                  className="appearance-none px-3 py-1.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:ring focus:ring-green-500 bg-white"
                 >
                   <option value={10}>10</option>
                   <option value={50}>50</option>
                   <option value={100}>100</option>
                 </select>
+
                 <span className="text-sm text-gray-600">
                   Showing 1 to 10 of {totalEntries} entries
                 </span>
