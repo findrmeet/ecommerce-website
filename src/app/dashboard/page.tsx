@@ -100,7 +100,7 @@ const Page = () => {
       </ul>
 
       {/* content */}
-      <div className="sm:col-span-10 col-span-12">
+      <div className="sm:col-span-10 col-span-12 text-nowrap">
         {active === "dashboard" && (
           <div className="grid sm:grid-cols-3 gap-2.5 self-start">
             <div className="bg-white rounded-2xl flex p-4 ">
