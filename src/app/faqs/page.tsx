@@ -47,7 +47,7 @@ const FAQsPage = () => {
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <header className="mb-12 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-green-700">
+          <h1 className="text-3xl md:text-4xl font-bold text-green-700">
             প্রায়শই জিজ্ঞাসিত প্রশ্ন (FAQs)
           </h1>
           <p className="mt-4 text-gray-600 text-lg">

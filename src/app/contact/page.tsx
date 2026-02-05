@@ -4,7 +4,7 @@ const ContactPage = () => {
       <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-10 md:p-14">
         {/* Header */}
         <header className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-green-700">
+          <h1 className="text-3xl md:text-4xl font-bold text-green-700">
             আমাদের সাথে যোগাযোগ করুন
           </h1>
           <p className="mt-4 text-gray-600 text-lg">
