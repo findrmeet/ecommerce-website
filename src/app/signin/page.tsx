@@ -3,6 +3,7 @@ import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Phone, Lock, Eye } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 // type declarations
 type SignInValues = {
@@ -118,7 +119,10 @@ export default function SignInForm() {
             type="button"
             className="w-full py-3 border border-neutral-300 rounded-xl flex items-center justify-center gap-3 hover:bg-neutral-50 transition cursor-pointer"
           >
-            <img
+            <Image
+              alt="logo"
+              width={20}
+              height={20}
               src="https://www.svgrepo.com/show/475656/google-color.svg"
               className="w-5 h-5"
             />

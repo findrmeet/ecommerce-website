@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Testimonial = () => {
@@ -85,8 +86,10 @@ const Testimonial = () => {
           </svg>
         </div>
         <div className="flex gap-2">
-          <img
-            src="profile.png"
+          <Image
+            width={48}
+            height={48}
+            src="/profile.png"
             alt="profile"
             className="rounded-full size-12"
           />

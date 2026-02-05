@@ -1,5 +1,6 @@
 import React, { FC, memo } from "react";
 import Logo from "../Logo/Logo";
+import Link from "next/link";
 import {
   FaFacebookF,
   FaInstagramSquare,
@@ -7,13 +8,15 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import Image from "next/image";
 
 type ListSectionProps = {
   title?: string;
   items: string[];
+  links?: string[]; // optional links array
 };
 
-const ListSection: FC<ListSectionProps> = ({ title, items }) => (
+const ListSection: FC<ListSectionProps> = ({ title, items, links }) => (
   <section aria-label={title ?? "footer section"}>
     {title ? (
       <h3 className="uppercase text-primary-500 font-semibold text-sm">
@@ -21,9 +24,18 @@ const ListSection: FC<ListSectionProps> = ({ title, items }) => (
       </h3>
     ) : null}
     <div className="text-white space-y-3 py-4 text-sm">
-      {items.map((item) => (
-        <div key={item} className="uppercase cursor-pointer">
-          {item}
+      {items.map((item, index) => (
+        <div key={item} className="uppercase">
+          {links ? (
+            <Link
+              href={links[index]}
+              className="cursor-pointer hover:underline"
+            >
+              {item}
+            </Link>
+          ) : (
+            <span className="cursor-pointer">{item}</span>
+          )}
         </div>
       ))}
     </div>
@@ -99,6 +111,16 @@ const Footer: FC = () => {
     "Store location",
   ];
 
+  const legalLinks = [
+    "/about-us",
+    "/terms-conditions",
+    "/privacy-policy",
+    "/cancellation-refund",
+    "/contact",
+    "/faqs",
+    "/store-location",
+  ];
+
   return (
     <footer className="bg-black py-10">
       <div className="container max-w-[1320px] mx-auto px-2">
@@ -106,10 +128,14 @@ const Footer: FC = () => {
           <div>
             <Logo />
             <div className="text-white flex flex-col gap-3 pt-4 text-sm">
-              {legalAndInfo.map((item) => (
-                <div key={item} className="uppercase cursor-pointer">
+              {legalAndInfo.map((item, index) => (
+                <Link
+                  key={item}
+                  href={legalLinks[index]}
+                  className="uppercase cursor-pointer hover:underline"
+                >
                   {item}
-                </div>
+                </Link>
               ))}
 
               <div className="py-4">
@@ -140,7 +166,12 @@ const Footer: FC = () => {
         </div>
 
         <div className="pb-4 px-2 hidden lg:block">
-          <img src="pay-with.png" alt="payment methods" />
+          <Image
+            width={1320}
+            height={43.505859375}
+            src="/pay-with.png"
+            alt="payment methods"
+          />
         </div>
 
         <div className="py-2 border-t text-[#4B5563] text-center">

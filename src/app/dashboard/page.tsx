@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 import CustomStyledDropdown from "./CustomStyledDropdown";
 import PaymentStatusDropdown from "./PaymentStatusDropodown";
+import Image from "next/image";
 
 // Types
 interface OrderItem {
@@ -815,7 +816,7 @@ const Page = () => {
                               <tr key={item.id} className="hover:bg-gray-50">
                                 <td className="py-4 px-4">
                                   <div className="flex items-center gap-3">
-                                    <img
+                                    <Image
                                       src={item.image}
                                       alt={item.name}
                                       className="w-12 h-12 rounded-lg object-cover"

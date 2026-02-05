@@ -8,7 +8,7 @@ interface BlogPageProps {
 
 const BlogDetailsPage = ({ params }: BlogPageProps) => {
   return (
-    <article className="bg-gray-50 min-h-screen">
+    <article className="bg-gray-50 min-h-screen text-black">
       {/* Hero Section */}
       <div className="bg-green-600 text-white">
         <div className="container mx-auto px-6 py-14">

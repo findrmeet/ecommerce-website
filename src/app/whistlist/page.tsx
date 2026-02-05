@@ -1,5 +1,6 @@
 import { Trash2 } from "lucide-react";
 import rawItems from "../../../public/wishlist.data.json";
+import Image from "next/image";
 export type WishlistItem = {
   id: number;
   title: string;
@@ -35,7 +36,7 @@ const page = () => {
           >
             {/* Left */}
             <div className="flex items-center gap-2">
-              <img
+              <Image
                 src={item.image}
                 alt={item.title}
                 className="h-20 w-20 rounded-lg object-contain"

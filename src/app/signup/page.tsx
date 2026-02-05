@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { Eye, Lock } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 type SignupValues = {
   fullName: string;
@@ -130,7 +131,7 @@ export default function SignupForm() {
             type="button"
             className="w-full py-3 border border-neutral-300 rounded-xl flex items-center justify-center gap-3 hover:bg-neutral-50 transition cursor-pointer"
           >
-            <img
+            <Image
               src="https://www.svgrepo.com/show/475656/google-color.svg"
               alt="Google"
               className="w-5 h-5"
